@@ -9,6 +9,14 @@
 </head>
 <body>
     <h1>hello welcome</h1>
+    <table>
+        {% for i in d %}
+        <tr>
+            <td>{{i.name}}</td>
+            <td>{{i.age}}</td>
+        </tr>
+        {% endfor %}
+    </table>
     <img src="{% static 'images/pic1.jpg' %}" alt="" width="300" height="300">
     <p>Definition: A set of words that is complete in itself, typically containing a subject and predicate, conveying a statement, question, exclamation, or command, and consisting of a main clause and sometimes one or more subordinate clauses.
 
